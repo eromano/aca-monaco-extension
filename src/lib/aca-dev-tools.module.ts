@@ -5,7 +5,7 @@ import { AcaDevToolsComponent } from './aca-dev-tools.component';
 import { CoreModule } from '@alfresco/adf-core';
 import { ContentModule } from '@alfresco/adf-content-services';
 import { ExtensionService } from '@alfresco/adf-extensions';
-import { MarkdownViewComponent } from './viewer/markdown-view/markdown-view.component';
+import { MonacoViewComponent } from './viewer/monac-view/monaco-view.component';
 
 export function components() {
     return [
@@ -29,7 +29,7 @@ export class AcaDevToolsModule {
     constructor(extensions: ExtensionService) {
         extensions.setComponents({
             'dev.tools.component': AcaDevToolsComponent,
-            'dev.tools.viewer.markdown': MarkdownViewComponent
+            'dev.tools.viewer.monaco': MonacoViewComponent
         });
     }
 }
